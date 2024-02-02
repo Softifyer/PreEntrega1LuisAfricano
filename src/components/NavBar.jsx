@@ -1,7 +1,13 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
+import Softify from '../img/Softify-logo.png';
+import Background from '../img/indexBackground.jpg';
 import CarWidget from './CarWidget.jsx';
+
+let fondo = {
+    Background: {Background},
+}
 
 export const NavBar = () => {
     return (
@@ -11,7 +17,7 @@ export const NavBar = () => {
                     <nav className="navbar navbar-expand-lg">
                         <div className="container-fluid">
                             <a className="navbar-brand logo" href="./index.html">
-                                <img className="d-inline-block align-content-center logo" src="../src/img/Softify-logo.png"
+                                <img className="d-inline-block align-content-center logo" src= {Softify}
                                     alt="Logo Softify" /><span className="navbar-text">Softify</span>
                             </a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -32,7 +38,7 @@ export const NavBar = () => {
                 </div>
             </div>
             <div>
-                <section className="backgroundMain">
+                <section className="backgroundMain" style={fondo} >
                     <article className="tituloMain">
                         <h1>Softify</h1>
                         <h2>¡Bienvenidos a su tienda favorita!</h2>
