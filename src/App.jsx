@@ -5,7 +5,9 @@ export const App = () => {
 
   return (
     <>
-      <NavBar/>
+      
+      <NavBar greeting="¡BIENVENIDO!" />
+      
     </>
   )
 }

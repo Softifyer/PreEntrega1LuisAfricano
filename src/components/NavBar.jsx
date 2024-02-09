@@ -6,10 +6,10 @@ import Background from '../img/indexBackground.jpg';
 import CarWidget from './CarWidget.jsx';
 
 let fondo = {
-    Background: {Background},
+    Background: { Background },
 }
 
-export const NavBar = () => {
+export const NavBar = ({ greeting }) => {
     return (
         <>
             <div className='header'>
@@ -17,7 +17,7 @@ export const NavBar = () => {
                     <nav className="navbar navbar-expand-lg">
                         <div className="container-fluid">
                             <a className="navbar-brand logo" href="./index.html">
-                                <img className="d-inline-block align-content-center logo" src= {Softify}
+                                <img className="d-inline-block align-content-center logo" src={Softify}
                                     alt="Logo Softify" /><span className="navbar-text">Softify</span>
                             </a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,7 +31,7 @@ export const NavBar = () => {
                                 <li className="nav-item"><a className="nav-link" href="#">Software</a></li>
                                 <li className="nav-item"><a className="nav-link" href="#">Componentes</a></li>
                                 <li className="nav-item"><a className="nav-link" href="#">Licenciamiento</a></li>
-                                <CarWidget/>
+                                <CarWidget />
                             </ul>
                         </div>
                     </nav>
@@ -41,7 +41,7 @@ export const NavBar = () => {
                 <section className="backgroundMain" style={fondo} >
                     <article className="tituloMain">
                         <h1>Softify</h1>
-                        <h2>¡Bienvenidos a su tienda favorita!</h2>
+                        <h2>{greeting}</h2>
                         <p>¡Donde encontrarás lo mejor en software y tecnología!</p>
                         <div className="container-fluid">
                             <div className="row">
