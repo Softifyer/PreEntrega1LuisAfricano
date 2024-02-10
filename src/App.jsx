@@ -1,12 +1,14 @@
 import './styles/App.css'
 import NavBar from './components/NavBar.jsx'
+import ItemListConteiner from './components/ItemListConteiner.jsx'
 
 export const App = () => {
 
   return (
     <>
       
-      <NavBar greeting="¡BIENVENIDO!" />
+      <NavBar/>
+      <ItemListConteiner greeting={'B I E N V E N I D O'} />
       
     </>
   )
